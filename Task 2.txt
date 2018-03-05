@@ -1,0 +1,16 @@
+Julia McDonald (jmcdona6)
+Task 2
+
+Q1: The whole running time of the method is O(n^2) because it contains a single while loop (which would have a run time of O(n)) and several constant time statements both within and outside of the while loop. Within the while loop, we call the .equals method on each title of the cd in the collection, which has a run time of O(n) based on the length of each title. Therefore, if we assume x is the number of constant time statements, we can use the following expression to find the run time: x * O(1) * O(n) * O(n) = O(n^2).
+
+Q2: O(1) because this statement contains only a simple comparison and a return statement, which both run in constant time.
+
+Q3: O(n) because in the worst case scenario--the cd is never found--this while loop will run through the entire length of the collection and big-O notation always represents the worst case scenario. In the best case scenario--the cd title matches the first element--this loop would have a run time of O(1) because it would only run once.
+
+Q4: O(n) because there are two method calls here: one to the getter for title and one to the .equals method of String. This means that the run time of the statement must be O(n) where n is the length of the String because every character in each of the two Strings must be compared.
+
+Q5: O(1) because we are only dealing with one element in the collection. A single replacement in a collection will not necessarily take considerably more or less time depending on the collection size or element size.
+
+Q6: O(1) because all arithmetic operations run in constant time, and this statement simply adds one to an int.
+
+Q7: O(1) because a return statement of a primitive value like a boolean can only run once by definition. Once it runs, the method is over.
